@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+   <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+<table class="table table-striped">
+    	
+    <tr>
+	<th>Name:</th>
+	<td><%= person.name %></td>
+	</tr>
+	<tr>
+	<th>College:</th>
+	<td><%= person.college %></td>
+	</tr>
+	<tr>
+	<th>Course:</th>
+	<td><%= person.course %></td>
+	</tr>
+	<tr>
+	<th>Semester:</th>
+	<td><%= person.semester %></td>
+	</tr>
+	<tr>
+	<th>Contact No:</th>
+	<td><%= person.contact %></td>
+	</tr>
+	<th>Email Address:</th>
+	<td><%= person.email %></td>
+	</tr>
+	<tr>
+	<th>Facebook Link:</th>
+	<td><a href= "https://www.facebook.com/pratibha.stha"><%= person.fb %></a></td>
+	</tr>
+	<tr>
+	<th>Profile Picture:</th>
+	 <td><iframe width="600px" height="600px" src="<%= person.profile %>" frameborder="0"></iframe></td>
+	</tr>
+
+    </table>
+</body>
+</html>
+
