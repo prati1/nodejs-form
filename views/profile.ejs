@@ -9,40 +9,44 @@
 
 <body>
 <table class="table table-striped">
-    	
+    	<% profiles.forEach(function(profile,i){ %>
     <tr>
 	<th>Name:</th>
-	<td><%= person.name %></td>
+	<td><%= profile.name %></td>
 	</tr>
 	<tr>
 	<th>College:</th>
-	<td><%= person.college %></td>
+	<td><%= profile.college %></td>
 	</tr>
 	<tr>
 	<th>Course:</th>
-	<td><%= person.course %></td>
+	<td><%= profile.course %></td>
 	</tr>
 	<tr>
 	<th>Semester:</th>
-	<td><%= person.semester %></td>
+	<td><%= profile.semester %></td>
 	</tr>
 	<tr>
 	<th>Contact No:</th>
-	<td><%= person.contact %></td>
+	<td><%= profile.contact %></td>
 	</tr>
 	<th>Email Address:</th>
-	<td><%= person.email %></td>
+	<td><%= profile.email %></td>
 	</tr>
 	<tr>
 	<th>Facebook Link:</th>
-	<td><a href= "https://www.facebook.com/pratibha.stha"><%= person.fb %></a></td>
+	<td><a href= "https://www.facebook.com/pratibha.stha"><%= profile.fb %></a></td>
 	</tr>
 	<tr>
 	<th>Profile Picture:</th>
-	 <td><iframe width="600px" height="600px" src="<%= person.profile %>" frameborder="0"></iframe></td>
+	 <td></td>
 	</tr>
+
+	<% }) %>
 
     </table>
 </body>
 </html>
+
+
 

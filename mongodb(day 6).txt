@@ -1,0 +1,35 @@
+mongodb
+
+node: language
+express: framework
+mongo: database
+mongoose: framework
+
+
+npm install mongoose --save
+
+show dbs
+
+use fellow_profile
+
+/////create collection profiles
+show collections
+
+db.createCollection('profiles')
+show collections
+
+db.profiles.insert({name: 'Pratiksha Shrestha', college:'Kathmandu University',})
+
+db.profiles.find()
+
+
+on app.js
+var mongoose = require('mongoose');
+var app = express();
+
+mongoose.connect('mongodb://localhost/fellow_profiles');
+var db = mongoose.collection;
+
+
+
+<!-- <img src="<%= person.profile %>" frameborder="0" height = "100px" width = "100px"> -->

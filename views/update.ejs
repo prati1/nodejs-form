@@ -5,31 +5,29 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-	<form action="/profile" method="post">
+	<form action="/updateProfile/update" method="post">
 	<h1>EDIT</h1><br/>
+	<input type="hidden" name="_id" value="<%= profile._id %>" id="id">
 	Name:<br/>
-	<input type="text" name ="name" placeholder="Name"><br/><br>
+	<input type="text" name ="name" value="<%= profile.name %>"><br/><br>
 	College:<br/>
-	<input type="text" name = "College" placeholder="College"><br/><br/>
+	<input type="text" name = "college" value="<%= profile.college %>"><br/><br/>
 	Course:<br/>
-	<input type="text" name = "Course" placeholder="Course"><br/><br/>
+	<input type="text" name = "course" value="<%= profile.course %>"><br/><br/>
 	Semester:<br/>
-	<input type="number" name = "Semsester" placeholder="semester"><br/><br/>
+	<input type="number" name = "semester" value="<%= profile.semester %>"><br/><br/>
 	Contact No:<br/>
-	<input type="number" name = "Contact" placeholder="contact no"><br/><br/>
+	<input type="number" name = "contact" value="<%= profile.contact %>"><br/><br/>
 	Email id:<br/>
-	<input type="email" name = "Email id" placeholder="email"><br/><br/>
+	<input type="email" name = "email" value="<%= profile.email %>"><br/><br/>
 	Facebook link:<br/>
-	<input type="url" name = "Facebook link" placeholder="facebook link"><br/><br/>
+	<input type="url" name = "fb" value="<%= profile.fb %>"><br/><br/>
 	Select your photo:<br/>
-	<input type="file" name = "image" ><br/>
+	<input type="file" name = "pdffile" value = "default image"><br/>
 	<br/>
-	<input type = "submit" name ="update">
+	<button type = "submit" class="btn btn-primary">Update</button>
 	<br/>
-	<input type = "" name ="cancel">
-
-
-
+	<a id="delete" class="btn btn-danger" href="/updateProfile/delete/<%= profile._id %>">Delete</a>
 	</form>
 </body>
 </html>
